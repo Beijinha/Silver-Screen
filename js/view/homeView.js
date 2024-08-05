@@ -17,10 +17,8 @@ function render(onClick) {
     e.preventDefault();
 
     const {
-      title,
-      year,
-      director,
-      imdbRating: rating
+      id,
+      name
     } = await onClick(parseInt(Math.random() * 6));
     const elem = document.createElement('div');
     elem.className = `text-center`;

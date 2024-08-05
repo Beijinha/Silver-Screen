@@ -5,16 +5,14 @@ function render(films) {
   list.style = `display: flex; margin-top: 10%`;
   list.className = `text-center`;
 
-  films.forEach(({ title, year, director, imdbRating: rating }) => {
+  films.forEach(({ id, name }) => {
     const item = document.createElement('div');
     item.className = `col card text-white bg-primary mb-3" style="max-width: 18rem;`;
-    item.innerHTML = `<div class="card-header">${director}</div>
+    item.innerHTML = `<div class="card-header">Genres</div>
                             <div class="card-body">
-                                <h5 class="card-title">${title}</h5>
+                                <h5 class="card-title"></h5>
                                 <p class="card-text">
-                                    <p>year: ${year}</p>
-                                    <p>director: ${director}</p>
-                                    <p>rating: ${rating}</p>
+                                    <p>${name}</p>
                                 </p>
                         </div>`;
     list.appendChild(item);
