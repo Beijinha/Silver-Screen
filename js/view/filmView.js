@@ -5,7 +5,7 @@ function render(films) {
   list.style = `display: flex; margin-top: 10%`;
   list.className = `text-center`;
 
-  films.forEach(({ id, name }) => {
+  films.forEach(({ name }) => {
     const item = document.createElement('div');
     item.className = `col card text-white bg-primary mb-3" style="max-width: 18rem;`;
     item.innerHTML = `<div class="card-header">Genres</div>

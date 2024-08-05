@@ -1,4 +1,4 @@
-const URL = "https://api.themoviedb.org/3/genre/movie/list?api_key=971047b106704813c630da0a5695afaa";
+const URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=971047b106704813c630da0a5695afaa";
 
 async function fetchData() {
 
@@ -19,9 +19,9 @@ async function getFilms() {
       fetchData()
     ]);
 
-    console.log(repos[0].genres[0]);
+    console.log(repos[0].results);
 
-    return repos[0].genres;
+    return repos[0].results;
 
   } catch (err) {
 

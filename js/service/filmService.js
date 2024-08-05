@@ -7,10 +7,6 @@ async function fetchData() {
   return response.json();
 };
 
-async function getFilm(index) {
-  //return films[index]
-}
-
 async function getFilms() {
 
   try {
@@ -29,4 +25,4 @@ async function getFilms() {
   }
 }
 
-export default { getFilm, getFilms };
+export default { getFilms };
